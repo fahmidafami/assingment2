@@ -675,13 +675,48 @@ fetchData();
 
 
 // exercise2
-
-// 1) Celsius to Fahrenheit Conversion
+// 1) 
 function celsiusToFahrenheit(c) {
     return (9 * c / 5) + 32;
 }
 
-// Examples:
-console.log("38°C =", celsiusToFahrenheit(38) + "°F");
-console.log("24°C =", celsiusToFahrenheit(24) + "°F");
-console.log("-1°C =", celsiusToFahrenheit(-1) + "°F");
+console.log(celsiusToFahrenheit(38));
+console.log(celsiusToFahrenheit(24));
+console.log(celsiusToFahrenheit(-1));
+
+
+// 2) 
+var classification = ["John Hill", "Mary Jane", "Gary Vee", "Paricia Mills", "Helen Hall", "Paul Green"];
+console.log("Lowest Grade:", classification[0]);
+console.log("Highest Grade:", classification[classification.length - 1]);
+
+
+// 3) 
+var course = {
+    title: "Learn to Code in Python 3",
+    categories: ['programming', 'technology', 'python'],
+    '5_stars_reviews': 420,
+    '4_stars_reviews': 80,
+    '3_stars_reviews': 33,
+    '2_stars_reviews': 20,
+    '1_stars_reviews': 4
+};
+
+// a) 
+console.log("Course Title:", course.title);
+
+// b) 
+console.log("Main Category:", course.categories[0]);
+
+// c) 
+function fiveStarPercentage(course) {
+    var totalReviews = course['5_stars_reviews'] + course['4_stars_reviews'] + course['3_stars_reviews'] + course['2_stars_reviews'] + course['1_stars_reviews'];
+    var percentage = (course['5_stars_reviews'] / totalReviews) * 100;
+    return Math.round(percentage) + "%";
+}
+console.log("Percentage of 5 Stars Reviews:", fiveStarPercentage(course));
+
+
+// 4) 
+var shoppingList = ["Milk", "Butter", "Juice", "Bread", "Beer", "Rice", "Potatoes", "Chocolate"];
+console.log("Shopping List:", shoppingList);
