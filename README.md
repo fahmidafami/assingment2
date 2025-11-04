@@ -1,2 +1,3 @@
 # Live Link
-https://github.com/fahmidafami/assingment2.git
+https://fahmidafami.github.io/assingment2/
+

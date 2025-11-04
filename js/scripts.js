@@ -673,7 +673,6 @@ fetchData();
 
 
 
-
 // exercise2
 // 1) 
 function celsiusToFahrenheit(c) {
@@ -684,12 +683,17 @@ console.log(celsiusToFahrenheit(38));
 console.log(celsiusToFahrenheit(24));
 console.log(celsiusToFahrenheit(-1));
 
+document.getElementById("fahr_1").innerText = message;
+document.getElementById("fahr_2").innerText = message;
+document.getElementById("fahr_3").innerText = message;
+
 
 // 2) 
 var classification = ["John Hill", "Mary Jane", "Gary Vee", "Paricia Mills", "Helen Hall", "Paul Green"];
 console.log("Lowest Grade:", classification[0]);
 console.log("Highest Grade:", classification[classification.length - 1]);
-
+document.getElementById("lowest_grade").innerText = classification[0];
+document.getElementById("highest_grade").innerText = classification[classification.length - 1];
 
 // 3) 
 var course = {
